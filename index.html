@@ -13,7 +13,14 @@
       background-color: #f5f5f5;
       font-family: sans-serif;
     }
-    img, video {
+    video {
+      max-width: 100%;  /* 화면 크기에 맞게 조정 */
+      height: auto;     /* 비율을 유지하면서 높이를 자동으로 조정 */
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    img {
       max-width: 90%;
       margin-bottom: 20px;
       border-radius: 10px;
@@ -24,14 +31,12 @@
 <body>
   <h2>영상</h2>
   <video controls>
-    <source src="fountain.mp4" type="video/mp4">
+    <source src="videos/fountain.mp4" type="video/mp4">
+    <source src="videos/fountain.webm" type="video/webm">
     브라우저가 동영상을 지원하지 않습니다.
-    </video>
-    
+  </video>
+
   <h2>이미지</h2>
   <img src="showcase1.png" alt="나의 이미지">
-
-  
-  
 </body>
 </html>
