@@ -2,23 +2,33 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>나의 이미지</title>
+  <title>나의 이미지와 영상</title>
   <style>
     body {
       margin: 0;
+      padding: 20px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
       background-color: #f5f5f5;
+      font-family: sans-serif;
     }
-    img {
-      max-width: 100%;
-      height: auto;
+    img, video {
+      max-width: 90%;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
 <body>
+  <h2>이미지</h2>
   <img src="showcase1.png" alt="나의 이미지">
+
+  <h2>영상</h2>
+  <video controls>
+    <source src="videos/fountain.mp4" type="video/mp4">
+    브라우저가 동영상을 지원하지 않습니다.
+  </video>
 </body>
 </html>
